@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Formulario de Contacto{% endblock %}
+
+{% block content %}
+<div class="form-horizontal" style="font-size: 10px;">
+  <h3>Formulario de Contacto</h3>
+  <form method="post" name="contacto_form">
+    <div class="form-group label-floating">
+      <label class="control-label">Nombre:</label>
+      <input type="text" class="form-control" name="nombre" placeholder="Nombre Completo">
+    </div>
+    <div class="form-group label-floating">
+      <label class="control-label">Correo:</label>
+      <input type="text" class="form-control" name="email" placeholder="Correo electrónico">
+    </div>
+    <div class="form-group label-floating">
+      <label class="control-label">Comentario:</label>
+      <textarea class="form-control" name="comentario" rows="3" placeholder="Déjanos tu mensaje..."></textarea>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-default" type="button">Cancelar</button>
+      <button class="btn btn-primary btn-raised" type="submit">Enviar</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
